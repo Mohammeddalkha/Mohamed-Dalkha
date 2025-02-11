@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
 if (dnt != "1" && dnt != "yes") {
     (function (i, s, o, g, r, a, m) {
@@ -21,4 +22,29 @@ if (dnt != "1" && dnt != "yes") {
     );
     ga("create", "", "auto");
     ga("send", "pageview");
+=======
+var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+if (dnt != "1" && dnt != "yes") {
+    (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+        i[r] ||
+        function () {
+            (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+    );
+    ga("create", "", "auto");
+    ga("send", "pageview");
+>>>>>>> 50045b0 (Initial commit or FullStory update)
 }
